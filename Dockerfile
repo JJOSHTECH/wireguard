@@ -16,7 +16,7 @@ ENV LISTEN_PORT="/port/"
 ENV PRIVATE_KEY="/path/"
 ENV PEER="/peer/"
 ENV ALLOWED_IPS="/Allowed Network/"
-ENV ENDPOINT="/Endpoint Address/"
+ENV ENDPOINT="/Endpoint Address : Port/"
 
 # Environment to describe the https hook address for slack
 ENV SLACK_HOOK="/Slackhook/"
