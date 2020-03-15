@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+        wg-vpn:
+                image: "jjoshtech/wireguard:latest"
+                container_name: "WG-VPN"
+                hostname: "WG-VPN"
+                port:
+                  - "5000:5000"
+                environment:
+                  LISTEN_PORT: "5000"
+                  ALLOWED_IPS: "0.0.0.0/0"
+                restart: "unless-stopped"
