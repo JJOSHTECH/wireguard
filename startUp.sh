@@ -14,7 +14,7 @@ if [ "$(ls -l /etc/keys)" = "total 0" ]
 fi
 
 # Create Wireguard Server
-wg set wg0 listen-port $LISTEN_PORT private-key /etc/keys/private peer /etc/keys/public allowed-ips $ALLOWED_IPS endpoint $ENDPOINT
+wg set wg0 listen-port $LISTEN_PORT private-key /etc/keys/private peer /etc/keys/public allowed-ips $ALLOWED_IPS
 
 # Set Interface up
 ip link set up dev wg0
