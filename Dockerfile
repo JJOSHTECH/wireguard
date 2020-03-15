@@ -12,8 +12,8 @@ RUN apt update && apt full-upgrade -y && apt autoremove && apt clean
 RUN apt install wireguard -y
 
 # Enviroment to describe the server from which you want to make an update
-ENV LISTEN_PORT="/port/"
-ENV ALLOWED_IPS="/Allowed Network/"
+ENV LISTEN_PORT="5000"
+ENV ALLOWED_IPS="0.0.0.0/0"
 
 # Environment to describe the https hook address for slack
 ENV SLACK_HOOK="/Slackhook/"
